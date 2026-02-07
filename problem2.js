@@ -1,11 +1,15 @@
 function validOtp(otp) {
-          // You have to write your code here
-          if(otp.startsWith("ph") && otp.length === 8){
-            console.log(true)
-            // return true
+        if(typeof otp === "string"){
+            if( otp.startsWith("ph") && otp.length === 8){
+            
+            return true
           }else{
-            console.log(false)
+            return false
           }
+        }else{
+            return "Invalid"
+        }
+          
 }
 
 validOtp("ph-10985")
